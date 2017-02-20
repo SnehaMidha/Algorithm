@@ -1,4 +1,6 @@
-#nclude <iostream>
+/*Task. Given two integers n and m, output F n mod m (that is, the remainder of F n when divided by m).*/
+
+#include <iostream>
 
 long long get_fibonacci_huge_naive(long long n, long long m) {
 	if (n <= 1)
@@ -30,7 +32,6 @@ long long getFibonacciHugePisano(long long n,long long m){
 			long long reducedN=n%period;
 			return getFibonacciHugePisano(reducedN,m);}
 		else{
-		//a =current;
 		beforePrevious=previous;
 		previous=current;}
 	}

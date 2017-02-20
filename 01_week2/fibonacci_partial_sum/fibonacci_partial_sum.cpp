@@ -1,3 +1,6 @@
+/*Task. Given two non-negative integers m and n, where m ≤ n, find the last digit of the sum F m + F m+1 +
+· · · + F n*/
+
 #include <iostream>
 #include <vector>
 using std::vector;

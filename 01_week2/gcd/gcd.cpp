@@ -1,3 +1,4 @@
+/*Task. Given two integers a and b, find their greatest common divisor.*/
 #include <iostream>
 
 int gcd_naive(int a, int b) {
@@ -20,12 +21,6 @@ int gcd(int a, int b){
 		return b;
 	if(b==0)
 		return a;
-//	if(a<b)
-//	{ current_gcd=a;
-//		div=b;}
-//	else
-//	{ current_gcd=b;
-//		div=a;}
 	rem=div%current_gcd;
 	while(rem!=0){
 		div= current_gcd;
