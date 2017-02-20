@@ -1,3 +1,5 @@
+/*Task. Given an integer n, find the last digit of the nth Fibonacci number F n (that is, F n mod 10).*/
+
 #include <iostream>
 
 int get_fibonacci_last_digit_naive(int n) {
