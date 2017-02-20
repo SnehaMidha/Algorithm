@@ -1,7 +1,8 @@
-#include <iostream>
+/*Task. The goal in this problem is to find the minimum number of coins needed to change the input value
+(an integer) into coins with denominations 1, 5, and 10.*/
 
+#include <iostream>
 int get_change(int m) {
-  //write your code here
 	int n=0;
 	n=m/10;
 	m=m%10;
