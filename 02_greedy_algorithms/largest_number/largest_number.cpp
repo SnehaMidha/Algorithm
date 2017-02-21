@@ -1,3 +1,4 @@
+//Task. Compose the largest number out of a set of integers.
 #include <algorithm>
 #include <sstream>
 #include <iostream>
