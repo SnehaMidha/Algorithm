@@ -1,24 +1,12 @@
+/*You are given a primitive calculator that can perform the following three operations with the current num-
+ber x: multiply x by 2, multiply x by 3, or add 1 to x. Your goal is given a positive integer n, find the
+minimum number of operations needed to obtain the number n starting from the number 1.*/
+
 #include <iostream>
 #include <vector>
 #include <algorithm>
 #include<limits.h>
 using std::vector;
-
-/*vector<int> optimal_sequence(int n) {
-  std::vector<int> sequence;
-  while (n >= 1) {
-  sequence.push_back(n);
-  if (n % 3 == 0) {
-  n /= 3;
-  } else if (n % 2 == 0) {
-  n /= 2;
-  } else {
-  n = n - 1;
-  }
-  }
-  reverse(sequence.begin(), sequence.end());
-  return sequence;
-  }*/
 
 vector<int> optimal_sequence(int n) {
 	std::vector<int> sequence;
@@ -35,13 +23,15 @@ vector<int> optimal_sequence(int n) {
 			val=c[i/3];
 		if(i%2==0)
 			val=val<c[i/2]?val:c[i/2];
-			c[i]=(val<c[i-1]?val:c[i-1])+1;
+		c[i]=(val<c[i-1]?val:c[i-1])+1;
+		
 	}
+	
 	while (n >= 1) {
 		sequence.push_back(n);
 		if(n==1||n==2){n=n-1;}
 		if(n==3) n=n-2;
-			if (n % 3 == 0 && c[n]==c[n/3]+1) {
+ 		if (n % 3 == 0 && c[n]==c[n/3]+1) {
 			n /= 3;
 		} else if (n % 2 == 0 &&c[n]==c[n/2]+1) {
 			n /= 2;
