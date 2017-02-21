@@ -5,7 +5,7 @@ using namespace std;
 
 vector<int> optimal_summands(int n) {
 	vector<int> summands;
-	//write your code here
+	
 	int l=1,k=n;
 	while(k>2*l)
 	{
@@ -14,7 +14,7 @@ vector<int> optimal_summands(int n) {
 		l=l+1;
 	}
 
-		summands.push_back(k);
+	summands.push_back(k);
 	return summands;
 }
 
