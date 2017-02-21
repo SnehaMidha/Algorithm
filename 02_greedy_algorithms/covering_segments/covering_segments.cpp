@@ -15,20 +15,20 @@ bool sortend(const Segment &a,const Segment &b)
 }
 vector<int> optimal_points(vector<Segment> &segments) {
 	vector<int> points;
-	//write your code here
-/*	for (size_t i = 0; i < segments.size(); ++i) {
-		points.push_back(segments[i].start);
-		points.push_back(segments[i].end);
-	}
-*/	sort(segments.begin(),segments.end(),sortend);
-	int i=0;
-	for(int j=1;j<segments.size();j++)
-	{
-		points.push_back(segments[i].end);
-		while(segments[i].end>=segments[j].start)
-			j++;
-		i=j;
-	}
+        sort(segments.begin(),segments.end(),sortend);
+	int j=0;
+	points.push_back(segments[0].end);
+        for(size_t i=1;i<segments.size();++i){
+
+
+                while(points[j]>=segments[i].start)
+                        ++i;
+                if(i<segments.size())
+                {
+                        points.push_back(segments[i].end);
+                        j++;
+                }
+        }
 	return points;
 }
 

@@ -21,7 +21,7 @@ bool isgreaterorequal(string d1,string d2)
 		b=d2+d1;
 	}
 	int c=a.compare(b);
-	return c1>=0;
+	return c>=0;
 }
 string largest_number(vector<string> a) {
 	//write your code here
