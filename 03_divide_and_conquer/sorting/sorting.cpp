@@ -1,3 +1,7 @@
+/*Task. To force the given implementation of the quick sort algorithm to efficiently process sequences with
+few unique elements, your goal is replace a 2-way partition with a 3-way partition. That is, your new
+partition procedure should partition the array into three parts: < x part, = x part, and > x part.*/
+
 #include <iostream>
 #include <vector>
 #include <cstdlib>
