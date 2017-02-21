@@ -1,3 +1,5 @@
+/*Task. The goal in this code problem is to check whether an input sequence contains a majority element*/
+
 #include <algorithm>
 #include <iostream>
 #include <vector>
