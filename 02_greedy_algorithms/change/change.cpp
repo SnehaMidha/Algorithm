@@ -9,8 +9,6 @@ int get_change(int m) {
 	n+=m/5;
 	m=m%5;
 	n+=m;	
-
-
   return n;
 }
 
